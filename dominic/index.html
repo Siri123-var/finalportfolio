@@ -35,7 +35,65 @@
 
 </head>
 <body id="page-top" class="politics_version">
+    
+    <style>
+        .education-section {
+    margin-left:-75px; /* Adjust this value as needed */
+          }
+        .techstack-section {
+    margin-left:-20px; /* Adjust this value as needed */
+          }
+        .personalprojects-section {
+               padding-left: 100px;
+          }
+          #expertise {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
 
+#expertise h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#expertise p {
+    color: #555;
+}
+#personal-projects {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+#personal-projects h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#personal-projects p {
+    color: #555;
+}
+
+#personal-projects ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+.project-box img {
+    display: block;
+    margin: 0 auto 10px; /* Center the icon and add spacing */
+}
+
+.project-box h4 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.project-box p {
+    text-align: justify;
+    color: #555;
+}
+        
+    </style>
     <!-- LOADER -->
     <div id="preloader">
         <div id="main-ld">
@@ -47,6 +105,18 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
+        <!-- Social Media Icons -->
+        <div class="navbar-brand">
+            <a href="https://github.com/Siri123-var" target="_blank" style="margin-right: 15px;">
+                <i class="fa fa-github" style="font-size: 20px; color: white;"></i>
+            </a>
+            <a href="https://in.linkedin.com/in/varshukandapalli-27194130b" target="_blank">
+                <i class="fa fa-linkedin" style="font-size: 20px; color: white;"></i>
+            </a>
+            <a href="kandapallisirivarshini@gmail.com" target="_blank">
+                <i class="fa fa-envelope" style="font-size: 20px; color: white; padding-left: 2px;"></i>
+            </a>
+        </div>
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
 			<!-- <img class="img-fluid" src="images//WhatsApp Image 2025-04-16 at 3.42.39 PM.jpeg" alt="" /> -->
 		</a>
@@ -65,6 +135,9 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#services">Qualification</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#personal-projects">Portfolio</a>
+              </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">My Projects</a>
             </li>
@@ -151,13 +224,35 @@
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end section -->
+
+    <div id="about" class="section lb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3><u>My Expertise</u></h3>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>UX Design</h4>
+                    <p>User-centered, intuitive, functional, engaging</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Web Developer</h4>
+                    <p>Building, coding, designing, optimizing.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>BackEnd Developer</h4>
+                    <p>Building server-side logic, handling databases.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 	
     <div id="services" class="section lb">
         <div class="container">
             <!-- Education and Tech Stack Section -->
             <div class="row">
                 <!-- Education Section -->
-                <div class="col-md-6">
+                <div class="col-md-6 education-section">
                     <div class="section-title text-left">
                         <h3><u>Education</u></h3>
                     </div>
@@ -178,7 +273,7 @@
                 </div><!-- end col -->
     
                 <!-- Tech Stack Section -->
-                <div class="col-md-6">
+                <div class="col-md-6 techstack-section">
                     <div class="section-title text-left">
                         <h3><u>Tech Stack</u></h3>
                     </div>
@@ -194,103 +289,104 @@
                         </div>
                     </div>
                 </div><!-- end col -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->  
-
-
-
-    <!-- <div id="services" class="section lb">
-        <div class="container">
-            Education Section
-            <div class="section-title text-left">
-                <h3>Education</h3>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="education-box d-flex align-items-center">
-                        <img src="images/graduation.png" alt="Education Icon" class="img-fluid" style="width: 80px; margin-right: 20px;">
-                        <div>
-                            <h4>Bachelor of Technology in Computer Science</h4>
-                            <p><strong>Raghu Engineering College</strong> – Graduating in 2024</p>
-                            <h4>Sri Chaitanya Junior College</h4>
-                            <!-- <p>Intermediate - MPC</p>
-                            <p>2018-2020 - 9.9 CGPA</p>
-                        </div>
-
+                <!-- <div class="col-md-4 personalprojects-section">
+                    <div class="section-title text-left">
+                        <h3><u>Tech Stack</u></h3>
                     </div>
-                </div>
-            </div><!-- end row -->
-    
-            <!-- Tech Stack Section -->
-            <!-- <div class="section-title text-left">
-                <h3>Tech Stack</h3>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
                     <div class="tech-box d-flex align-items-center">
-                        <img src="images/frontend-icon.png" alt="Frontend Icon" class="img-fluid" style="width: 80px; margin-right: 20px;">
+                        <img src="images/code.png" alt="Frontend Icon" class="img-fluid" style="width: 150px; margin-right: 20px;">
                         <div>
-                            <h4>Frontend Development</h4> --> -->
-                            <!-- <p>HTML, CSS, JavaScript, Bootstrap, React.js</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="tech-box d-flex align-items-center">
-                        <img src="images/backend-icon.png" alt="Backend Icon" class="img-fluid" style="width: 80px; margin-right: 20px;">
-                        <div>
+                            <h4>Frontend Development</h4>
+                            <p>HTML, CSS, JavaScript, Bootstrap, React.js</p>
                             <h4>Backend Development</h4>
                             <p>Node.js, Express.js, MongoDB</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="tech-box d-flex align-items-center">
-                        <img src="images/design-tools-icon.png" alt="Design Tools Icon" class="img-fluid" style="width: 80px; margin-right: 20px;">
-                        <div>
                             <h4>Design Tools</h4>
                             <p>Figma, Adobe XD, Photoshop, Illustrator</p>
                         </div>
                     </div>
+                </div>end col -->
+                <!-- Personal Projects Section -->
+        <!-- <div class="row">
+            <div class="col-md-6">
+                <div class="section-title text-left">
+                    <h3><u>Personal Projects</u></h3>
                 </div>
-            </div>end row --> -->
-    
-            <!-- Area of Interests Section -->
-            <!-- <div class="section-title text-left">
-                <h3>Area of Interests</h3>
-            </div> -->
-            <!-- <div class="row">
-                <div class="col-md-4">
-                    <div class="interest-box d-flex align-items-center">
-                        <img src="images/uiux-interest-icon.png" alt="UI/UX Interest Icon" class="img-fluid" style="width: 80px; margin-right: 20px;">
-                        <div>
-                            <h4>UI/UX Design</h4>
-                            <p>Creating intuitive and visually appealing user interfaces.</p>
-                        </div>
-                    </div>
+                <div class="projects-box">
+                    <ul>
+                        <li>
+                            <strong>Food Recipe Website:</strong> A responsive web application for browsing and searching recipes. 
+                            <a href="https://techprojects-rpch.vercel.app" target="_blank">View Project</a>
+                        </li>
+                        <li>
+                            <strong>Color Picker Tool:</strong> A JavaScript-based tool for selecting and customizing colors. 
+                            <a href="https://techprojects-bt4z.vercel.app" target="_blank">View Project</a>
+                        </li>
+                        <li>
+                            <strong>Countdown Timer:</strong> A dynamic timer built with JavaScript for tracking events. 
+                            <a href="https://techprojects-ff6u.vercel.app" target="_blank">View Project</a>
+                        </li>
+                        <li>
+                            <strong>eKart Shopping Site:</strong> A Bootstrap-based e-commerce website for online shopping. 
+                            <a href="https://ekart-35dq.vercel.app" target="_blank">View Project</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-md-4">
-                    <div class="interest-box d-flex align-items-center">
-                        <img src="images/webdev-interest-icon.png" alt="Web Development Interest Icon" class="img-fluid" style="width: 80px; margin-right: 20px;">
-                        <div>
-                            <h4>Web Development</h4>
-                            <p>Building responsive and dynamic websites using modern frameworks.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="interest-box d-flex align-items-center">
-                        <img src="images/graphic-interest-icon.png" alt="Graphic Design Interest Icon" class="img-fluid" style="width: 80px; margin-right: 20px;">
-                        <div>
-                            <h4>Graphic Design</h4>
-                            <p>Designing creative visuals for branding and marketing.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>end row -->
+            </div>
+        </div>end row -->
+    </div><!-- end container -->
+</div><!-- end section -->
+            </div><!-- end row -->
         </div><!-- end container -->
+    </div><!-- end section -->  
+    </div><!-- end container -->
     </div><!-- end section -->
+    <div id="personal-projects" class="section lb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3><u>Personal Projects</u></h3>
+            </div>
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-md-4">
+                    <div class="project-box">
+                        <img src="images/job-offer.png" alt="Job Posting Board Icon" class="img-fluid" style="width:70px; height:70px; margin-bottom: 10px;">
+                        <h4>Job Posting Board (MERN Stack)</h4>
+                        <p>
+                            Developed a Full-stack job board platform for companies to register, verify accounts via email and mobile OTP, post jobs, and send automated job alerts to candidates.
+                        </p>
+                        <!-- <ul>
+                            <li><strong>Key Features:</strong> User Registration with email verification and Twilio-based mobile OTP.</li>
+                            <li><strong>Authentication & Email Automation:</strong> JWT-based auto-login and Nodemailer for job alerts.</li>
+                            <li><strong>Tech Stack:</strong> React.js, Node.js, Express.js, MongoDB, Twilio, Nodemailer.</li>
+                        </ul> -->
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-4">
+                    <div class="project-box">
+                        <img src="images/line-chart.png" alt="Dashboard Icon" class="img-fluid" style="width:70px;  height:70px; margin-bottom: 10px;">
+                        <h4>Data Analysis and Dashboard</h4>
+                        <p>
+                            Conducted data analysis and created an interactive dashboard to visualize insights and trends effectively.
+                        </p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-4">
+                    <div class="project-box">
+                        <img src="images/pink-ribbon.png" alt="Machine Learning Icon" class="img-fluid" style="width:70px; height:70px; margin-bottom: 10px;">
+                        <h4>Breast Cancer Prediction Using Machine Learning</h4>
+                        <p>
+                            Implemented machine learning algorithms (Logistic Regression, Decision Trees, SVM, KNN) to analyze diagnostic data for early detection of breast cancer.
+                        </p>
+                        <!-- <p>
+                            This approach enhances diagnosis accuracy and assists in treatment planning, improving patient outcomes.
+                        </p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 	<div id="portfolio" class="section lb">
         <div class="container">
             <div class="section-title text-left">
@@ -350,168 +446,6 @@
             </div><!-- end gallery-list -->
         </div><!-- end container -->
     </div><!-- end section -->
-	 <!-- <div id="testimonials" class="section wb">
-        <div class="container">
-            <div class="section-title text-left">
-                <h3>Testimonials</h3>
-                <p>We thanks for all our awesome testimonials! There are hundreds of our happy customers! </p>
-            </div><!-- end title -->
-
-            <!-- <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <div class="testi-carousel owl-carousel owl-theme">
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
-                                <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_01.png" alt="" class="img-fluid alignleft">
-                                <h4>James Fernando <small>- Manager of Racer</small></h4>
-                            </div>
-                            <!-- end testi-meta -->
-                        <!-- </div> -->
-                        <!-- end testimonial -->
-
-                        <!-- <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
-                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_02.png" alt="" class="img-fluid alignleft">
-                                <h4>Jacques Philips <small>- Designer</small></h4>
-                            </div>
-                            end testi-meta -->
-                        <!-- </div>
-                        end testimonial
-
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
-                                <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_03.png" alt="" class="img-fluid alignleft">
-                                <h4>Venanda Mercy <small>- Newyork City</small></h4>
-                            </div> -->
-                            <!-- end testi-meta -->
-                        <!-- </div> -->
-                        <!-- end testimonial -->
-                        <!-- <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
-                                <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_01.png" alt="" class="img-fluid alignleft">
-                                <h4>James Fernando <small>- Manager of Racer</small></h4>
-                            </div>
-                            <!-- end testi-meta -->
-                        <!-- </div>
-                        end testimonial --> -->
-
-                        <!-- <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
-                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_02.png" alt="" class="img-fluid alignleft">
-                                <h4>Jacques Philips <small>- Designer</small></h4>
-                            </div> -->
-                            <!-- end testi-meta -->
-                        <!-- </div> -->
-                        <!-- end testimonial -->
-
-                        <!-- <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
-                                <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_03.png" alt="" class="img-fluid alignleft">
-                                <h4>Venanda Mercy <small>- Newyork City</small></h4>
-                            </div> -->
-                            <!-- end testi-meta -->
-                        <!-- </div>end testimonial -->
-                    <!-- </div>end carousel -->
-                <!-- </div>end col -->
-            <!-- </div><!-- end row -->
-        <!-- </div><!-- end container -->
-    <!-- </div><!-- end section -->
-	<!-- <div id="blog" class="section lb">
-		<div class="container">
-			<div class="section-title text-left">
-                <h3>Blog</h3>
-                <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus.</p>
-            </div><!-- end title -->
-			
-			<!-- <div class="row">
-				<div class="col-md-4 col-sm-6 col-lg-4">
-					<div class="post-box">
-						<div class="post-thumb">
-							<img src="uploads/blog-01.jpg" class="img-fluid" alt="post-img" />
-							<div class="date">
-								<span>06</span>
-								<span>Aug</span>
-							</div>
-						</div> --> -->
-						<!-- <div class="post-info">
-							<h4>Quisque auctor lectus interdum nisl accumsan venenatis.</h4>
-							<ul>
-                                <li>by admin</li>
-                                <li>Apr 21, 2018</li>
-                                <li><a href="#"><b> Comments</b></a></li>
-                            </ul>
-							<p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 col-lg-4">
-					<div class="post-box">
-						<div class="post-thumb">
-							<img src="uploads/blog-02.jpg" class="img-fluid" alt="post-img" />
-							<div class="date">
-								<span>06</span>
-								<span>Aug</span>
-							</div> -->
-						<!-- </div>
-						<div class="post-info">
-							<h4>Quisque auctor lectus interdum nisl accumsan venenatis.</h4>
-							<ul>
-                                <li>by admin</li>
-                                <li>Apr 21, 2018</li>
-                                <li><a href="#"><b> Comments</b></a></li>
-                            </ul>
-							<p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 col-lg-4">
-					<div class="post-box">
-						<div class="post-thumb">
-							<img src="uploads/blog-03.jpg" class="img-fluid" alt="post-img" />
-							<div class="date">
-								<span>06</span>
-								<span>Aug</span> -->
-							<!-- </div>
-						</div>
-						<div class="post-info">
-							<h4>Quisque auctor lectus interdum nisl accumsan venenatis.</h4>
-							<ul>
-                                <li>by admin</li>
-                                <li>Apr 21, 2018</li>
-                                <li><a href="#"><b> Comments</b></a></li>
-                            </ul>
-							<p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-	</div> --> 
 
     <div id="contact" class="section db">
         <div class="container">
@@ -524,64 +458,59 @@
                 <div class="col-md-12">
                     <div class="contact_form">
                         <div id="message"></div>
-                        <form id="contactForm" action="https://formspree.io/f/meoawdvg" method="POST">
+                        <form id="contactForm">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input class="form-control" name="name" type="text" placeholder="Your Name" required>
+                                        <input class="form-control" id="name" type="text" placeholder="Your Name" required>
                                     </div>
                                     <div class="form-group">
-                                        <input class="form-control" name="email" type="email" placeholder="Your Email" required>
+                                        <input class="form-control" id="email" type="email" placeholder="Your Email" required>
                                     </div>
                                     <div class="form-group">
-                                        <input class="form-control" name="phone" type="tel" placeholder="Your Phone">
+                                        <input class="form-control" id="phone" type="tel" placeholder="Your Phone">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
+                                        <textarea class="form-control" id="message" placeholder="Your Message" required></textarea>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 text-center">
-                                    <button id="sendMessageButton" class="sim-btn btn-hover-new" type="submit">Send Message</button>
+                                    <button id="sendMessageButton" class="sim-btn btn-hover-new" type="button" onclick="sendEmail()">Send Message</button>
                                 </div>
                             </div>
                         </form>
-                        <!-- <form id="contactForm" name="sentMessage" novalidate="novalidate">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<input class="form-control" id="name" type="text" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name.">
-										<p class="help-block text-danger"></p>
-									</div>
-									<div class="form-group">
-										<input class="form-control" id="email" type="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email address.">
-										<p class="help-block text-danger"></p>
-									</div>
-									<div class="form-group">
-										<input class="form-control" id="phone" type="tel" placeholder="Your Phone" required="required" data-validation-required-message="Please enter your phone number.">
-										<p class="help-block text-danger"></p>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<textarea class="form-control" id="message" placeholder="Your Message" required="required" data-validation-required-message="Please enter a message."></textarea>
-										<p class="help-block text-danger"></p>
-									</div>
-								</div>
-								<div class="clearfix"></div>
-								<div class="col-lg-12 text-center">
-									<div id="success"></div>
-									<button id="sendMessageButton" class="sim-btn btn-hover-new" data-text="Send Message" type="submit">Send Message</button>
-								</div>
-							</div>
-						</form> -->
+                        
+                        <script>
+                            function sendEmail() {
+                                const name = document.getElementById("name").value;
+                                const email = document.getElementById("email").value;
+                                const phone = document.getElementById("phone").value;
+                                const message = document.getElementById("message").value;
+                        
+                                emailjs.send("service_ltse63v", "__ejs-test-mail-service__", {
+                                    name: name,
+                                    email: email,
+                                    phone: phone,
+                                    message: message,
+                                }).then(
+                                    function(response) {
+                                        alert("Message sent successfully!");
+                                        document.getElementById("contactForm").reset();
+                                    },
+                                    function(error) {
+                                        alert("Failed to send the message. Please try again.");
+                                    }
+                                );
+                            }
+                        </script>
+                        
                     </div>
                 </div><!-- end col -->
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end section -->
-
     <div class="copyrights">
         <div class="container">
             <div class="footer-distributed">
@@ -616,8 +545,15 @@
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
     <script src="js/jquery.vide.js"></script>
+    <!-- <script src="js/jquery.mobile.customized.min.js"></script> -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
-    document.getElementById("contactForm").addEventListener("submit", function (event) {
+        (function() {
+            emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS User ID
+        })();
+    </script>
+    <!-- <script> 
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
         event.preventDefault(); // Prevent default form submission
 
         const form = event.target;
@@ -642,6 +578,32 @@
                 alert("An error occurred. Please try again.");
             });
     });
+    </script>
+    <!-- document.getElementById("contactForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const form = event.target;
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+                Accept: "application/json",
+            },
+        })
+            .then((response) => {
+                if (response.ok) {
+                    alert("Message sent successfully!");
+                    form.reset(); // Reset the form
+                } else {
+                    alert("Failed to send the message. Please try again.");
+                }
+            })
+            .catch((error) => {
+                alert("An error occurred. Please try again.");
+            });
+    }); --> -->
 </script>
     </script>
 
