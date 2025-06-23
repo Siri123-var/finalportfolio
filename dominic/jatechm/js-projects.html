@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #f9f9f9;
+        }
+        .mini {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('https://img.freepik.com/free-photo/purple-background-with-leaves-stars_91008-509.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .image-content1 {
+            width: 350px;
+            height: 350px;
+            margin: 20px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 20px;
+        }
+        .inner-content {
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+            position: relative;
+            transition: all 1s;
+        }
+        .overlay-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #000;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(226, 168, 237, 0.6);
+            text-align: center;
+            font-size: 18px;
+            border-radius: 20px;
+            position: absolute;
+            top: 0; left: 0;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .image-content1:hover .overlay-text {
+            opacity: 1;
+        }
+        .project-title {
+            text-align: center;
+            color: #6c3483;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        .image-content1:hover .overlay-text {
+    opacity: 1 !important;
+}
+    </style>
+</head>
+<body>
+    <h1 class="project-title">JavaScript Projects</h1>
+    <div class="mini">
+        <!-- Color Picker Project -->
+         <!-- Color Picker Project (using <img> instead of background-image) -->
+<div class="image-content1" style="position:relative;">
+    <img src="https://media.istockphoto.com/id/959601294/photo/close-up-cropped-portrait-of-womans-hands-holding-tablet-pen-choosing-colour-from-color.jpg?s=612x612&w=0&k=20&c=J6xSrkHw9QUZ5mAO1cxi487H6uuPU4HgO_oa-0lcn6E=" alt="Color Picker" style="width:100%; height:100%; object-fit:cover; border-radius:20px;">
+    <div class="overlay-text" style="position:absolute; top:0; left:0; width:100%; height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center; color:#000; background-color:rgba(226,168,237,0.6); border-radius:20px; opacity:0; transition:opacity 0.3s;">
+        <h3><i>Color Picker</i></h3>
+        <a href="https://javascriptstechm-ullt.vercel.app" class="btn btn-primary" target="_blank" style="margin-top:10px;">Open</a>
+    </div>
+</div>
+       
+        <!-- Countdown Timer Project -->
+         <div class="image-content1" style="position:relative;">
+    <img src="https://media.istockphoto.com/id/1144461712/vector/flip-clock-showing-how-much-time-hours-minutes-and-seconds-flip-board-with-black-numbers-in.jpg?s=612x612&w=0&k=20&c=x2Hg1R8dF6U-tGCeaxFysqPKGv7ObdHh6Y2VpUExeqE=" alt="Color Picker" style="width:100%; height:100%; object-fit:cover; border-radius:20px;">
+    <div class="overlay-text" style="position:absolute; top:0; left:0; width:100%; height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center; color:#000; background-color:rgba(226,168,237,0.6); border-radius:20px; opacity:0; transition:opacity 0.3s;">
+        <h3><i>Time Calculator</i></h3>
+        <a href=" https://javascriptstechm-ullt.vercel.app" class="btn btn-primary" target="_blank" style="margin-top:10px;">Open</a>
+    </div>
+</div>
+       <div class="image-content1" style="position:relative;">
+    <img src="https://media.istockphoto.com/id/1153172622/photo/vacation-travel-planning-concept-with-map-overhead-view-of-equipment-for-travelers-travel.jpg?s=612x612&w=0&k=20&c=3XrnMP1ladzHKCcDxcJJtWAjjxoeSVkidlryXhv1yMY=" alt="Color Picker" style="width:100%; height:100%; object-fit:cover; border-radius:20px;">
+    <div class="overlay-text" style="position:absolute; top:0; left:0; width:100%; height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center; color:#000; background-color:rgba(226,168,237,0.6); border-radius:20px; opacity:0; transition:opacity 0.3s;">
+        <h3><i>Wonder love</i></h3>
+        <a href="https://javascriptstechm-prbn.vercel.app" class="btn btn-primary" target="_blank" style="margin-top:10px;">Open</a>
+    </div>
+</div>
+    </div>
+</body>
+</html>
