@@ -154,7 +154,154 @@
     opacity: 0;
     transition: opacity 0.3s;
 }
-        
+/* Contact Section Styles */
+#contact.section {
+    background-color: #f9f9f9;
+    /* background: linear-gradient(135deg, #f9f7fa 0%, #f3e7e9 100%); */
+    padding: 60px 0 40px 0;
+}
+
+#contact .section-header h3 {
+    color: #AF9483;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+#contact .section-header p {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px 28px;
+    box-shadow: 0 8px 32px rgba(175, 148, 131, 0.10), 0 1.5px 8px rgba(0,0,0,0.06);
+    margin-bottom: 24px;
+    transition: box-shadow 0.3s;
+}
+.contact-info p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 12px;
+    letter-spacing: 0.2px;
+}
+.contact-info i {
+    color: #AF9483;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.contact-info a {
+    color: #325051;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.contact-info a:hover {
+    color: #AF9483;
+    text-decoration: underline;
+}
+.contact-info .social a {
+    display: inline-block;
+    margin-right: 12px;
+    font-size: 22px;
+    color: #AF9483;
+    background: #f3e7e9;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.contact-info .social a:hover {
+    background: #AF9483;
+    color: #fff;
+    transform: translateY(-3px) scale(1.08);
+}
+
+.form {
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px 28px;
+    box-shadow: 0 8px 32px rgba(175, 148, 131, 0.10), 0 1.5px 8px rgba(0,0,0,0.06);
+}
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #e0d6d0;
+    padding: 12px 16px;
+    font-size: 16px;
+    margin-bottom: 18px;
+    background: #f9f7fa;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.form-control:focus {
+    border-color: #AF9483;
+    box-shadow: 0 0 0 2px #f3e7e9;
+    background: #fff;
+}
+textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+.sim-btn.btn-hover-new, #sendMessageButton {
+    background: linear-gradient(90deg, #AF9483 0%, #4d474f 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(175, 148, 131, 0.10);
+    transition: background 0.2s, transform 0.2s;
+    margin-top:5px;
+}
+.sim-btn.btn-hover-new:hover, #sendMessageButton:hover {
+    background: linear-gradient(90deg, #e2a8ed 0%, #AF9483 100%);
+    color: #fff;
+    transform: translateY(-2px) scale(1.04);
+}
+@media (max-width: 767px) {
+    #contact .row.align-items-center {
+        flex-direction: column;
+    }
+    .contact-info, .form {
+        margin-bottom: 20px;
+        padding: 20px 10px;
+    }
+}
+/* Subfilter Button Styles */
+#designing-subfilters, #photoshop-subfilters, #illustrator-subfilters {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.subfilter-btn {
+    background: linear-gradient(90deg, #AF9483 0%, #e2a8ed 100%);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 22px;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(175, 148, 131, 0.10);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    outline: none;
+}
+.subfilter-btn:hover, .subfilter-btn.active {
+    background: linear-gradient(90deg, #e2a8ed 0%, #AF9483 100%);
+    color: #fff;
+    transform: translateY(-2px) scale(1.04);
+}
+/* .row1{
+    padding-left:5px;
+} */
     </style>
     <!-- LOADER -->
     <div id="preloader">
@@ -195,11 +342,11 @@
               <a class="nav-link js-scroll-trigger" href="#about">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Qualification</a>
+              <a class="nav-link js-scroll-trigger" href="#services">MySkills</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#personal-projects">Portfolio</a>
-              </li>
+              </li> -->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">My Projects</a>
             </li>
@@ -287,17 +434,16 @@
         </div><!-- end container -->
     </div><!-- end section -->
 
-    <div id="about" class="section lb">
+    <div id="services" class="section lb">
         <div class="container">
             <div class="section-title text-left">
                 <h3 style="font-family:'Poppins', sans-serif;color: #555; text-transform:capitalize;">My Skills</u></h3>
             </div>
             <!-- Add this inside your My Expertise section, after the existing row -->
-
-<div class="row" style="margin-top:40px;">
-    <!-- Front End Skills -->
-    <div class="col-md-4">
-        <div class="skills">
+        <div  class="row" style="margin-top:40px;">
+        <!-- Front End Skills -->
+        <div class="col-md-4">
+         <div class="skills">
             <h2 style="color:#325051; font-family:'Poppins',sans-serif;justify-content: center; margin: 0 ;margin-left:50px;text-transform:capitalize;">FrontEnd </h2>
             <div style="display: flex; flex-direction: row; justify-content: center; gap:20px;margin-left: 0px;">
                 <div class="skill-name" style="display: flex; flex-direction: column; align-items: center;">
@@ -363,10 +509,10 @@
 
 <div id="services" class="section-lb">
 <!-- Education and Tech Stack Section -->
-     <div class="row">
+ <div class="row">
                 <div class="col-md-6">
-    <div class="about-card">
-        <h3 class="font-weight-light" style="font-family:'Poppins',sans-serif;color: #555; font-size: 35px; text-transform: capitalize;margin-left:10px">Education</h3>
+    <div class="about-card" style="padding-left: 12px;">
+        <h3 class="font-weight-light" style="font-family:'Poppins',sans-serif;color: #555;padding-left: 20px ; font-size: 35px; text-transform: capitalize;margin-left:10px">Education</h3>
         <span class="line mb-5"></span>
         <div class="row">
             <div class="col-1 text-primary pt-1"><i class="fa fa-graduation-cap icon-lg"></i></div>
@@ -397,7 +543,7 @@
         </div>
     </div>
 </div>
-    <div class="col-md-6 ">
+<div class="col-md-6 ">
     <div class="about-card">
         <h3 class="font-weight-light" style=" display: inline-block; font-family:'Poppins',sans-serif; color: #555; font-size: 35px; text-transform: capitalize;">My Expertise</h3>
         <span class="line mb-5"></span>
@@ -407,8 +553,8 @@
                 <h6>UX Design</h6>
                 <!-- <p class="subtitle">User-centered, intuitive, functional, engaging</p> -->
                 <p class="subtitle">
-I craft intuitive and visually engaging user interfaces that enhance <br>
-usability and elevate the overall user experience.
+                 I craft intuitive and visually engaging user interfaces that enhance <br>
+                 usability and elevate the overall user experience.
                 <hr>
             </div>
         </div>
@@ -418,8 +564,8 @@ usability and elevate the overall user experience.
                 <h6>Web Developer</h6>
                 <!-- <p class="subtitle">Building, coding, designing, optimizing.</p> -->
                 <p class="subtitle">
-I build responsive, high-performance websites that deliver smooth user experiences across all devices
-</p>
+                I build responsive, high-performance websites that deliver smooth user experiences across all devices
+                </p>
                 <hr>
             </div>
         </div>
@@ -429,16 +575,14 @@ I build responsive, high-performance websites that deliver smooth user experienc
                 <h6>BackEnd Developer</h6>
                 <!-- <p class="subtitle">Building server-side logic, handling databases.</p> -->
                  <p class="subtitle">
-I develop robust server-side logic and APIs for scalable applications.<br>
-Ensuring secure, efficient, and reliable backend solutions.
-</p>
+                 I develop robust server-side logic and APIs for scalable applications.<br>
+                Ensuring secure, efficient, and reliable backend solutions.
+                </p>
                 <hr>
             </div>
         </div>
     </div>
-</div>
-
-                
+</div>               
     </div><!-- end container -->
 </div><!-- end section -->
             </div><!-- end row -->
@@ -446,53 +590,7 @@ Ensuring secure, efficient, and reliable backend solutions.
     </div><!-- end section -->  
     </div><!-- end container -->
     </div><!-- end section -->
-    <div id="personal-projects" class="section lb">
-        <div class="container">
-            <div class="section-title text-left">
-                <h3><u>Personal Projects</u></h3>
-            </div>
-            <div class="row">
-                <!-- Project 1 -->
-                <div class="col-md-4">
-                    <div class="project-box">
-                        <img src="images/job-offer.png" alt="Job Posting Board Icon" class="img-fluid" style="width:70px; height:70px; margin-bottom: 10px;">
-                        <h4>Job Posting Board (MERN Stack)</h4>
-                        <p>
-                            Developed a Full-stack job board platform for companies to register, verify accounts via email and mobile OTP, post jobs, and send automated job alerts to candidates.
-                        </p>
-                        <!-- <ul>
-                            <li><strong>Key Features:</strong> User Registration with email verification and Twilio-based mobile OTP.</li>
-                            <li><strong>Authentication & Email Automation:</strong> JWT-based auto-login and Nodemailer for job alerts.</li>
-                            <li><strong>Tech Stack:</strong> React.js, Node.js, Express.js, MongoDB, Twilio, Nodemailer.</li>
-                        </ul> -->
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="col-md-4">
-                    <div class="project-box">
-                        <img src="images/line-chart.png" alt="Dashboard Icon" class="img-fluid" style="width:70px;  height:70px; margin-bottom: 10px;">
-                        <h4>Data Analysis and Dashboard</h4>
-                        <p>
-                            Conducted data analysis and created an interactive dashboard to visualize insights and trends effectively.
-                        </p>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="col-md-4">
-                    <div class="project-box">
-                        <img src="images/pink-ribbon.png" alt="Machine Learning Icon" class="img-fluid" style="width:70px; height:70px; margin-bottom: 10px;">
-                        <h4>Breast Cancer Prediction Using Machine Learning</h4>
-                        <p>
-                            Implemented machine learning algorithms (Logistic Regression, Decision Trees, SVM, KNN) to analyze diagnostic data for early detection of breast cancer.
-                        </p>
-                        <!-- <p>
-                            This approach enhances diagnosis accuracy and assists in treatment planning, improving patient outcomes.
-                        </p> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 	<div id="portfolio" class="section lb">
         <div class="container">
             <div class="section-title text-left">
@@ -513,9 +611,49 @@ Ensuring secure, efficient, and reliable backend solutions.
                         <button data-filter=".gal_c">Figma Works</button>
                         <button data-filter=".gal_d">Personal Projects</button>
                     </div>
+                    <!-- Sub-filters for Designing Works -->
+                   <!-- <div id="designing-subfilters" style="display:none; margin: 20px 0;">
+                         <button class="subfilter-btn" data-subfilter=".photoshop">Photoshop</button>
+                         <button class="subfilter-btn" data-subfilter=".illustrator">Illustrator</button>
+                        <button class="subfilter-btn" data-subfilter=".wordpress">WordPress</button>
+                    </div>
+                   <div id="photoshop-subfilters" style="display:none; margin: 10px 0;">
+                        <button class="subfilter-btn" data-subfilter=".flyer">Flyers</button>
+                        <button class="subfilter-btn" data-subfilter=".webbanner">Web Banners</button>
+                        <button class="subfilter-btn" data-subfilter=".webtemplate">Web Templates</button>
+                    </div>
+                    <div id="illustrator-subfilters" style="display:none; margin: 10px 0;">
+                         <button class="subfilter-btn" data-subfilter=".icon">Icons</button>
+            </div> -->
                 </div>
             </div>        
     <div class="gallery-list row">
+        <!-- Photoshop Flyer Example -->
+         <div class="col-md-4 col-sm-6 gallery-grid gal_b">
+               <div class="gallery-single fix image-containers1" style="position:relative; overflow:hidden; border-radius:10px;">
+                <h3 style="text-align:center; margin-top:10px;">DESIGN PROJECTS</h3>
+                <img src="https://img.freepik.com/premium-vector/simple-letter-o-logo-with-swoosh-design-illustration-colorful_345408-456.jpg?semt=ais_hybrid&w=740" class="img-fluid" alt="Food Recipe Project" style="width:100%; border-radius:10px;">
+           <div class="overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); display:flex; flex-direction:column; justify-content:center; align-items:center; opacity:0; transition:opacity 0.3s;">                      
+                          <a href="./jatechm//design.html" class="btn btn-primary" style="margin: 20px; font-size: 18px; padding: 10px 30px;">
+                          View All Designing Projects
+                           </a>
+                         </div>
+                     </div>
+                </div> 
+               <!-- <div class="col-md-4 col-sm-6 gallery-grid gal_b photoshop flyer">
+                     <div class="gallery-single fix image-containers1">
+                <img src="https://media.istockphoto.com/id/1329001627/vector/image-editing-on-laptop-computer-screen.jpg?s=612x612&w=0&k=20&c=aCDVFz-H35AygUxEmOg9d6UoHL4Vf2WmT1-PT-aW6UA=" class="img-fluid" alt="Flyer">
+                <div class="overlay">Flyer Design 1</div>
+                  </div>
+               </div> -->
+        <!-- Illustrator Icon Example -->
+       <!-- <div class="col-md-4 col-sm-6 gallery-grid gal_b illustrator icon">
+              <div class="gallery-single fix image-containers1">
+              <img src="./images/graduation.png" class="img-fluid" alt="Icon">
+            <div class="overlay">Icon Design 1</div>
+            </div>
+        </div> -->
+
         <!-- Example for an HTML project card styled like your Udemy example -->
           <div class="col-md-4 col-sm-6 gallery-grid gal_a">
                <div class="gallery-single fix image-containers1" style="position:relative; overflow:hidden; border-radius:10px;">
@@ -582,37 +720,48 @@ Ensuring secure, efficient, and reliable backend solutions.
             </div>
         </div>
     </div>
+     <div class="col-md-4 col-sm-6 gallery-grid gal_c">
+        <div class="gallery-single fix image-containers1" style="position:relative; overflow:hidden; border-radius:10px;">
+            <h3 style="text-align:center; margin-top:10px;">FIGMA WIREFRAME</h3>
+            <img src="https://media.istockphoto.com/id/897973016/vector/browser-window.jpg?s=612x612&w=0&k=20&c=FLiLyyfCymP5H2msC7_dfHYUFm6cx6GgFUYMT1tFcKQ=" class="img-fluid" alt="FIGMA DESKTOP DESIGN" style="width:100%; border-radius:10px;">
+            <div class="overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); display:flex; flex-direction:column; justify-content:center; align-items:center; opacity:0; transition:opacity 0.3s;">
+                <a href="https://app.visily.ai/projects/ce06db75-589a-4c7b-bb12-5b313e3c81d6/boards/1943224" target="_blank" style="margin:5px;">
+                    <button style="padding:8px 16px; border:none; background:#AF9483; color:#0b0a0a; border-radius:5px;">FIGMA WEBSITE Design</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Add these inside your .gallery-list.row with class gal_d -->
+<div class="col-md-4 col-sm-6 gallery-grid gal_d">
+    <div class="gallery-single fix image-containers1" style="position:relative; overflow:hidden; border-radius:10px; background:#fff;">
+        <img src="images/job-offer.png" alt="Job Posting Board Icon" class="img-fluid" style="width:70px; height:70px; margin: 20px auto 10px; display:block;">
+        <h4 style="text-align:center;">Job Posting Board (MERN Stack)</h4>
+        <p style="padding: 0 15px 15px 15px; text-align:justify;">
+            Developed a Full-stack job board platform for companies to register, verify accounts via email and mobile OTP, post jobs, and send automated job alerts to candidates.
+        </p>
+    </div>
 </div>
-            <!-- <div class="col-md-4 col-sm-6 gallery-grid gal_c">
-               <div class="gallery-single fix image-containers1" style="position:relative; overflow:hidden; border-radius:10px;">
-                <h3 style="text-align:center; margin-top:10px;">FIGMA MOBILE DESIGN</h3>
-                <img src="https://media.istockphoto.com/id/1610769643/vector/women-in-stem-concept-a-figma-bundle-set-of-character-situations-and-scenes-of-a-woman.jpg?s=612x612&w=0&k=20&c=5l5oWO-mhUw94YJ_pgppQCCC6uq1Pv_LaAYhV6CLj8s=" class="img-fluid" alt="Food Recipe Project" style="width:100%; border-radius:10px;">
-                 <div class="overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); display:flex; flex-direction:column; justify-content:center; align-items:center; opacity:0; transition:opacity 0.3s;">
-                          <a href="https://www.figma.com/proto/5gNrV6bWJzK5xcoku8QDNW/instamart?node-id=276-901&t=5XUFPMQewuSqpji8-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=102%3A106&show-proto-sidebar=1" target="_blank" style="margin:5px;">
-                          <button style="padding:8px 16px; border:none; background:#AF9483; color:#0b0a0a; border-radius:5px;">Design</button>
-                          </a>
-                         </div>
-                     </div>
-                <div class="gallery-single fix image-containers1" style="position:relative; overflow:hidden; border-radius:10px;">
-                     <h3 style="text-align:center; margin-top:10px;">FIGJAM DESIGN</h3>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJHEN0h-XMO4WcdJb15IbXUCU3H0pbYXNJA&s" class="img-fluid" alt="Food Recipe Project" style="width:100%; border-radius:10px;">
-                 <div class="overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); display:flex; flex-direction:column; justify-content:center; align-items:center; opacity:0; transition:opacity 0.3s;">
-                          <a href="https://www.figma.com/board/cDJY5CGugUxsvxQ5yNlTq2/Smytten-App-%E2%80%93-Complete-User---Admin-Flowchart--E-commerce-UX---Community-?node-id=0-1&t=2FOd1xOjF49kA7WJ-1" target="_blank" style="margin:5px;">
-                          <button style="padding:8px 16px; border:none; background:#AF9483; color:#0b0a0a; border-radius:5px;">Design</button>
-                          </a>
-                         </div>
-                     </div>
-                <div class="gallery-single fix image-containers1" style="position:relative; overflow:hidden; border-radius:10px;">
-                <h3 style="text-align:center; margin-top:10px;">FIGMA DESKTOP DESIGN</h3>
-                <img src="https://media.istockphoto.com/id/1390810524/photo/tablet-with-text-financial-data-with-pie-chart-and-graphs-digital-device.jpg?s=612x612&w=0&k=20&c=f-Ts-hoZ0xEA2kJXsieQ8Nx5cz84v1iGH6ZBFT4_72U=" class="img-fluid" alt="Food Recipe Project" style="width:100%; border-radius:10px;">
-                 <div class="overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); display:flex; flex-direction:column; justify-content:center; align-items:center; opacity:0; transition:opacity 0.3s;">
-                          <a href="https://www.figma.com/proto/jip3wkLywFu5iVeerfVAH9/Untitled?node-id=4-253&t=aEktiqBupxNxz9iO-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank" style="margin:5px;">
-                          <button style="padding:8px 16px; border:none; background:#AF9483; color:#0b0a0a; border-radius:5px;">FIGMA WEBSITE Design</button>
-                          </a>
-                         </div>
-                     </div>
-            </div> -->
-                
+<div class="col-md-4 col-sm-6 gallery-grid gal_d">
+    <div class="gallery-single fix image-containers1" style="position:relative; overflow:hidden; border-radius:10px; background:#fff;">
+        <img src="images/line-chart.png" alt="Dashboard Icon" class="img-fluid" style="width:70px; height:70px; margin: 20px auto 10px; display:block;">
+        <h4 style="text-align:center;">Data Analysis and Dashboard</h4>
+        <p style="padding: 0 15px 15px 15px; text-align:justify;">
+            Conducted data analysis and created an interactive dashboard to visualize insights and trends effectively.
+        </p>
+    </div>
+</div>
+<div class="col-md-4 col-sm-6 gallery-grid gal_d">
+    <div class="gallery-single fix image-containers1" style="position:relative; overflow:hidden; border-radius:10px; background:#fff;">
+        <img src="images/pink-ribbon.png" alt="Machine Learning Icon" class="img-fluid" style="width:70px; height:70px; margin: 20px auto 10px; display:block;">
+        <h4 style="text-align:center;">Breast Cancer Prediction Using Machine Learning</h4>
+        <p style="padding: 0 15px 15px 15px; text-align:justify;">
+            Implemented machine learning algorithms (Logistic Regression, Decision Trees, SVM, KNN) to analyze diagnostic data for early detection of breast cancer.
+        </p>
+    </div>
+</div>
+</div>          
     </div><!-- end gallery-list -->
             
         </div>
@@ -620,60 +769,73 @@ Ensuring secure, efficient, and reliable backend solutions.
         </div><!-- end container -->
 </div><!-- end section -->
     
-
-    <div id="contact" class="section db">
-        <div class="container">
-            <div class="section-title text-left">
-                <h3>Contact</h3>
-                <p>Feel free to reach out to me for any inquiries or opportunities.</p>
-            </div>
-    
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="contact_form">
-                        <div id="message"></div>
-                        <form id="contactForm">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input class="form-control" id="contact_name" type="text" placeholder="Your Name" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="form-control" id="contact_email" type="email" placeholder="Your Email" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="form-control" id="contact_phone" type="tel" placeholder="Your Phone">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <textarea class="form-control" id="contact_message" placeholder="Your Message" required></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 text-center">
-                                    <button id="sendMessageButton" class="sim-btn btn-hover-new" type="button">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
+<div id="contact" class="section db">
+    <div class="container">
+        <div class="section-header text-left">
+            <h3>Contact Me</h3>
+            <p>
+                I’m looking forward to collaborating with you. Let’s create something amazing together!
+            </p>
+        </div>
+        <div class="row align-items-center">
+            <!-- Contact Info -->
+            <div class="col-md-6">
+                <div class="contact-info" style="background:#fff; border-radius:10px; padding:30px; box-shadow:0 2px 10px rgba(0,0,0,0.05);">
+                    <p><i class="fa fa-user"></i>Kandapalli SiriVarshini</p>
+                    <p><i class="fa fa-tag"></i> UI &amp; UX Designer &amp; Developer</p>
+                    <p><i class="fa fa-map-marker"></i> Atchutapuram,visakhapatnam</p>
+                    <p><i class="fa fa-envelope"></i> <a href="mailto:nagamanipalleti12@gmail.com">kandapallisirivarshini@gmail.com</a></p>
+                    <p><i class="fa fa-phone"></i> <a href="tel:6281661296">7386754227</a></p>
+                    <div class="social" style="margin-top:15px;">
+                        <a href="https://wa.me/916281661296" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                        <a href="https://github.com/Siri123-var" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://linkedin.com/in/varshukandapalli-27194130b" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
                     </div>
+                </div>
+            </div>
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <div class="form" style="background:#fff; border-radius:10px; padding:30px; box-shadow:0 2px 10px rgba(0,0,0,0.05);">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" id="contact_name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" id="contact_email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="contact_subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="contact_message" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <div>
+                            <button id="sendMessageButton" class="sim-btn btn-hover-new" type="submit">Send Message</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-    <div class="copyrights">
+</div>
+<div class="copyrights">
         <div class="container">
             <div class="footer-distributed">
                 <div class="footer-left">
                     <p class="footer-links">
                         <a href="#">Home</a>
                         <a href="#">Blog</a>
-                        <a href="#">Pricing</a>
+                        <!-- <a href="#">Pricing</a> -->
                         <a href="#">About</a>
-                        <a href="#">Faq</a>
+                        <!-- <a href="#">Faq</a> -->
                         <a href="#">Contact</a>
                     </p>
-                    <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">Dominic</a> Design By : 
-					<a href="https://html.design/">html design</a></p>
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2025 Design By : 
+					<a href="https://html.design/">Siri Varshini</a></p>
                 </div>
             </div>
         </div><!-- end container -->
@@ -725,6 +887,49 @@ document.getElementById('form')
       alert(JSON.stringify(err));
     });
 });
+document.querySelector('[data-filter=".gal_b"]').addEventListener('click', function() {
+    document.getElementById('designing-subfilters').style.display = 'block';
+    document.getElementById('photoshop-subfilters').style.display = 'none';
+    document.getElementById('illustrator-subfilters').style.display = 'none';
+    // Show only Designing Works
+    filterGallery('gal_b');
+});
+
+document.querySelectorAll('#designing-subfilters .subfilter-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        var subfilter = this.getAttribute('data-subfilter').replace('.', '');
+        // Show further subfilters if needed
+        if(subfilter === 'photoshop') {
+            document.getElementById('photoshop-subfilters').style.display = 'block';
+            document.getElementById('illustrator-subfilters').style.display = 'none';
+        } else if(subfilter === 'illustrator') {
+            document.getElementById('photoshop-subfilters').style.display = 'none';
+            document.getElementById('illustrator-subfilters').style.display = 'block';
+        } else {
+            document.getElementById('photoshop-subfilters').style.display = 'none';
+            document.getElementById('illustrator-subfilters').style.display = 'none';
+        }
+        filterGallery(subfilter);
+    });
+});
+
+document.querySelectorAll('#photoshop-subfilters .subfilter-btn, #illustrator-subfilters .subfilter-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        var subfilter = this.getAttribute('data-subfilter').replace('.', '');
+        filterGallery(subfilter);
+    });
+});
+
+function filterGallery(className) {
+    document.querySelectorAll('.gallery-list .gallery-grid').forEach(function(card) {
+        if(card.classList.contains(className)) {
+            card.style.display = '';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
     </script> 
   
 </body>
